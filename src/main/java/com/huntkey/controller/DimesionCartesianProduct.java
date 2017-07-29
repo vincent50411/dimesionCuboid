@@ -98,11 +98,11 @@ public class DimesionCartesianProduct
                 totalCuboidValue += value;
 
                 //有效维度
-                list.add("组合值:" + dimesionStr + "; cuboid:" + value);
+                list.add("维度树组合值:" + dimesionStr + "; 维度层级组合数:" + value);
             }
         }
 
-        list.add("总的维度组合结果为:" + list.size() + "; cuboid总和为:" + totalCuboidValue);
+        list.add("维度树组合总数:" + list.size() + "; 维度层级组合数:" + totalCuboidValue);
 
         return list;
     }
