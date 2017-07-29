@@ -1,6 +1,7 @@
 package com.huntkey.controller;
 
 import com.huntkey.dto.ApplicationDTO;
+import com.huntkey.dto.FastJSONDTO;
 import com.huntkey.dto.JDBCDTO;
 import com.huntkey.dto.TestBean;
 import com.huntkey.service.UserService;
@@ -51,6 +52,17 @@ public class Test
 
 
         return userName;
+    }
+
+    @RequestMapping("/prod")
+    public FastJSONDTO query()
+    {
+        FastJSONDTO fastJSONDTO = new FastJSONDTO();
+
+        fastJSONDTO.setProdName("sdfsdfdsfds");
+
+
+        return fastJSONDTO;
     }
 
 
